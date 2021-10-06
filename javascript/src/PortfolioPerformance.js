@@ -22,20 +22,23 @@ function getDailyPortfolioValues(prices, transactions) {
     
     
     // Plan A:
-    // 1. loop through the prices list:
+    // 1. loop through the prices array:
 
         //2. compare the dates within the array (use setHours method to exclude hours and minutes?) and identify objects with equal dates (if there is >1 date with the same value):             
 
         //3. pick date containing the most recent fund price
         // and assign the result to the variable dailyPrice
 
-    // 4. loop through the transactions list
-        // identify keys with equal date values  
+    // 4. loop through the transactions array
+        // identify properties with duplicate date values  
         // add together all the values for this date 
         // assign the result to variable dailyBitcoins
     
-    // 5. multiply dailyPrice by dailyBitcoins
-    // assign the result to dailyPerformanceValueList
+    // 5. multiply dailyPrice by dailyBitcoins and assign the result to dailyPortfolioValues
+
+    // 6. add dailyPortfolioValues to dailyPortfolioValuesList -??
+
+    // 7. output dailyPerformanceValueList
 
     
     // Plan B:
@@ -50,9 +53,9 @@ function getDailyPortfolioValues(prices, transactions) {
 
         // for (object in transactions)
         //  if (transactions[effectiveDate] ==  prices[effectiveDate])
-        //  customerBitcoins.push(transactions[value])
+        //  customerBitcoins.push(transactions[value]) - ??
 
-        // then multiply clients bitcoins by price (= performance value)
+        // then multiply client's bitcoins by price (to get performance value)
         // assign the result to performanceValue
         // add new element to dailyPerformanceValueList with date and performance value
         // if it does not have the same date:
